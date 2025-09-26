@@ -9,7 +9,6 @@ Permite a los usuarios registrarse, iniciar sesión y administrar sus tareas (cr
 - Base de datos: MySQL
 
 ## ⚡ Funcionalidades
-- Registro e inicio de sesión de usuarios
 - Crear nuevas tareas
 - Marcar tareas como completadas
 - Eliminar tareas
