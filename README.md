@@ -20,14 +20,20 @@ Permite a los usuarios registrarse, iniciar sesión y administrar sus tareas (cr
    ```bash
    git clone https://github.com/tuusuario/task-management-app-basic.git
 
-## Codigo para la base de datos:
-CREATE DATABASE todo_db;
+## 🗄️ Base de Datos
+
+Para este proyecto necesitas una base de datos MySQL llamada `todo_db`.  
+Ejecuta el siguiente script para crear la base y la tabla de tareas:
+
+```sql
+CREATE DATABASE IF NOT EXISTS todo_db;
 
 USE todo_db;
 
-CREATE TABLE tasks (
+CREATE TABLE IF NOT EXISTS tasks (
     id INT AUTO_INCREMENT PRIMARY KEY,
     description VARCHAR(255) NOT NULL,
     created_at DATETIME NOT NULL,
     completed_at DATETIME NULL
 );
+
