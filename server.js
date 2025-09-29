@@ -10,7 +10,7 @@ app.use(cors());app.use(cors({ origin: "*", methods: ["GET", "POST", "PUT", "DEL
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "PASSWORD", // Cambia esto si tienes una contraseña en MySQL
+  password: "PASSWORD", // Cambia esto con tu contraseña de MySQL
   database: "todo_db",
     port: 3306,
 });
@@ -71,5 +71,6 @@ app.delete("/tasks/:id", (req, res) => {
 app.listen(4000, () => {
   console.log("Servidor corriendo en http://localhost:4000");
 });
+
 
 
